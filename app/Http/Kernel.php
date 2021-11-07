@@ -63,5 +63,9 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+
+        /* 以下の2行を追記 */
+        'middleware_test1' => \App\Middleware\MiddlewareSample1::class,
+        'middleware_test2' => \App\Middleware\MiddlewareSample2::class,
     ];
 }

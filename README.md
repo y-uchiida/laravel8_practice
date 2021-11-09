@@ -27,3 +27,14 @@ Eloquent を利用したデータベース操作の前に、Laravelでのマイ�
 Laravelのモデルの機能を使って、効率的にデータベース操作を行うための入門となるサンプルコードを作成しました、
 お手元のMySQLなどでデータベースを作成して、動作を確認してください。  
 任意の名前でデータベースを作成し、`.env`ファイルに設定を行った後、`php artisan migrate && php artisan db:seed` を実行してください。
+
+## 6. auth(laravel/Breeze)
+Laravel 8 で追加されたBreezeを使ったログイン機能の実装例を作成しました。  
+うまく動作していない場合は、コンポーネントの不足やバージョン不整合の可能性があります。  
+エラーメッセージで検索をかけてみるなどしてみてください。  
+また、composerとnpmのインストール処理で解消される場合もあると思いますので、試してみてください。
+```
+$ composer require laravel/breeze:^1 --dev
+$ php artisan breeze:install
+$ npm install && npm run dev
+```

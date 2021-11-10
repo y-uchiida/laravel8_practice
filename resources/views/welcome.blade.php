@@ -24,7 +24,6 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer=""></script>
     </head>
-
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
@@ -53,11 +52,15 @@
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <ul class="list-reset flex flex-col text-gray-400">
                         <li class="rounded-t relative -mb-px block dark:border p-4 dark:border-grey"></li>
-                        <li class="relative -mb-px block dark:border p-4 dark:border-grey"><a href="./login_only">ログイン済みユーザーだけが利用できるページのテスト</a></li>
-                        <li class="relative -mb-px block dark:border p-4 dark:border-grey"><a href="./display_user_info">ユーザー情報の表示</a></li>
-                        <li class="relative -mb-px block dark:border p-4 dark:border-grey"><a href="./my_logout_sample">ログアウト処理のサンプル実装</a></li>
-細</a></li>
-bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                        <li class="relative -mb-px block dark:border p-4 dark:border-grey"><a href="./DBFacade_test">DBファサードを利用したデータベースへのアクセス1: 一覧表示</a></li>
+                        <li class="relative -mb-px block dark:border p-4 dark:border-grey"><a href="./DBFacade_test/1">DBファサードを利用したデータベースへのアクセス2: 詳細表示(ID: 1)</a></li>
+                        <li class="relative -mb-px block dark:border p-4 dark:border-grey"><a href="./queryBuilderTest">クエリビルダ(DBファサード経由)を利用したデータベースへのアクセス1: 一覧表示</a></li>
+                        <li class="relative -mb-px block dark:border p-4 dark:border-grey"><a href="./queryBuilderTest/1">クエリビルダ(DBファサード経由)を利用したデータベースへのアクセス2: 詳細表示(ID: 1)</a></li>
+                        <li class="rounded-b relative block dark:border p-4 dark:border-grey"></li>
+                      </ul>
+                </div>
+
+                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
                             <div class="flex items-center">

@@ -38,3 +38,10 @@ $ composer require laravel/breeze:^1 --dev
 $ php artisan breeze:install
 $ npm install && npm run dev
 ```
+
+## School Database
+モデルのリレーションを使う実装例として、教師、学生、ホームルーム、講義 の4つののモデルを関連させる例を実装しました。  
+もともとLaravel v6で作成していたもののため、フロントエンドにBootstrapを採用しています。  
+Larvel 8ではTailwindの方が標準採用されているので、Viewの作り方はあまり参考にならないかもしれません。  
+また、実装をシンプルにするため、Eager ロードなども行っていません。  
+モデルのリレーションの実装例として、ご利用いただくことを想定しています。

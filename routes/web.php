@@ -52,4 +52,8 @@ Route::get('/homeroom/{id}' ,[HomeroomController::class, 'edit']);
 Route::post('/homeroom/{id}' ,[HomeroomController::class, 'update']);
 Route::delete('/homeroom/{id}' ,[HomeroomController::class, 'delete']);
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
 require __DIR__.'/auth.php';

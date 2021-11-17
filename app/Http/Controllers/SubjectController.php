@@ -9,7 +9,9 @@ use Illuminate\Http\Request;
 class SubjectController extends Controller
 {
     public function index(){
-        $subjects = Subject::all();
+
+        /* subject のデータを5件ずつ表示する */
+        $subjects = Subject::paginate(5);
         return ( view('subjects', ['subjects' => $subjects]) );
     }
 

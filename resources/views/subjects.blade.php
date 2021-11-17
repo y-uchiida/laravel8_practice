@@ -53,6 +53,7 @@
                         </td>
                     </tr>
                 @endforeach
+                {{ $subjects->links() }}
             @endif
         </tbody>
       </table>

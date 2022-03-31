@@ -28,3 +28,14 @@ Route::get('/address/add', function(){
 
 /* addressの追加処理用 */
 Route::post('/address/add', [AddressController::class, 'create']);
+
+/* addressの編集画面用 */
+Route::get('/address/edit/{id}', [AddressController::class, 'edit']);
+
+/* addressの更新処理用 */
+Route::post('/address/update/{id}', [AddressController::class, 'update']);
+
+/* addressの削除処理用 */
+Route::delete('/address/delete/{id}', [AddressController::class, 'delete']);
+
+/**/

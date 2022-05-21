@@ -5,7 +5,7 @@
         </h1>
     </x-slot>
 
-    <h1>Add homeroom</h1>
+    <h1>Add homeroom　（ホームルーム追加）</h1>
     <form action="" method="POST">
         @csrf
         <div class="form-group">
